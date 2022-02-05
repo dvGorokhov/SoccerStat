@@ -1,3 +1,7 @@
 // global
-@import './variables.scss';
+@import "./variables.scss";
+@import "./common";
 // components
+@import "./components/antd-button.scss";
+@import "./components/antd-tabs.scss";
+@import "./components/antd-row.scss";

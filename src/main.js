@@ -1,44 +1,37 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from '@/router/index'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "@/router/index";
 
 import "@/assets/scss/app.scss";
-import './assets/tailwind.css'
-import './assets/antd-variables.less'
+import "./assets/tailwind.css";
+import "./assets/antd-variables.less";
 
 import {
   Layout,
   Button,
-  Checkbox,
-  Result,
+  Spin,
+  Avatar,
+  DatePicker,
   Card,
-  Divider,
   Col,
   Row,
-  Drawer,
-  Table,
-  Form,
-  InputNumber,
-  Tag,
-} from 'ant-design-vue';
+  Input,
+  Tabs,
+} from "ant-design-vue";
 
-
-const app = createApp(App)
+const app = createApp(App);
 app.config.productionTip = false;
 
 app.use(Layout);
 app.use(Button);
-app.use(Checkbox);
-app.use(Result);
+app.use(Avatar);
+app.use(Spin);
+app.use(DatePicker);
 app.use(Card);
-app.use(Divider);
 app.use(Col);
 app.use(Row);
-app.use(Drawer);
-app.use(Table);
-app.use(Form);
-app.use(InputNumber);
-app.use(Tag);
+app.use(Input);
+app.use(Tabs);
 
-app.use(router)
-app.mount('#app')
+app.use(router);
+app.mount("#app");

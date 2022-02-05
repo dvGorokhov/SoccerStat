@@ -1,0 +1,32 @@
+.ant-row {
+  &.matches__description {
+    .ant-col {
+      text-align: center;
+      border: 1px solid #fff;
+      padding: 10px;
+      &:first-child {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-right: none;
+      }
+      &:last-child {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-left: none;
+      }
+    }
+  }
+
+  &.matches__item {
+    .ant-col {
+      padding: 10px;
+      border-bottom: 1px solid #fff;
+      text-align: center;
+      &.matches__open {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
